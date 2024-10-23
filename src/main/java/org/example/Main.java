@@ -13,11 +13,11 @@ public class Main {
         UserService userService = context.getBean(UserService.class);
 
 //        Saving User
-      /*  User member = new User();
-        member.setUsername("Ito");
-        member.setEmail("Ito");
-        member.setPassword("Ito");
-        userRepository.save(member);*/
+        User member = new User();
+        member.setUsername("User");
+        member.setEmail("User");
+        member.setPassword("User");
+        userRepository.save(member);
 
 //        Deleting User
         /*user.setId(2L);
