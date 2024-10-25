@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="Spring">
-    <output-path>$PROJECT_DIR$/out/artifacts/Spring</output-path>
-    <root id="root" />
-  </artifact>
-</component>
