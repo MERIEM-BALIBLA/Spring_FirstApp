@@ -30,17 +30,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.findById(id);
     }
 
-    @Override
-    @Transactional(readOnly = true)
-    public Optional<User> getUserByUsername(String username) {
-        return userRepository.findByUsername(username);
-    }
-
-    @Override
-    @Transactional(readOnly = true)
-    public Optional<User> getUserByEmail(String email) {
-        return userRepository.findByEmail(email);
-    }
 
     @Override
     @Transactional(readOnly = true)
@@ -58,15 +47,4 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
 
-    @Override
-    @Transactional(readOnly = true)
-    public boolean existsByUsername(String username) {
-        return userRepository.existsByUsername(username);
-    }
-
-    @Override
-    @Transactional(readOnly = true)
-    public boolean existsByEmail(String email) {
-        return userRepository.existsByEmail(email);
-    }
 }

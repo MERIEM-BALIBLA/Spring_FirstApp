@@ -52,8 +52,8 @@
         %>
         <tr>
             <td><%= user.getId() %></td>
-            <td><%= user.getUsername() %></td>
-            <td><%= user.getEmail() %></td>
+            <td><%= user.getNom() %></td>
+            <td><%= user.getDateAdhesion() %></td>
         </tr>
         <%
             }
