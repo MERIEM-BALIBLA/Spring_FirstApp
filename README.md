@@ -20,17 +20,28 @@ such as creating, viewing, updating, and deleting users through a web interface.
 ### Project Structure
 my-spring-project
 │
+
 ├── src
+
 │   ├── main
+
 │   │   ├── java
+
 │   │   │   └── org
+
 │   │   │       └── example
-│   │   │           ├── controller          
-│   │   │           ├── service             
-│   │   │           ├── repository           
-│   │   │           └── model                
+
+│   │   │           ├── controller    
+
+│   │   │           ├── service       
+
+│   │   │           ├── repository     
+
+│   │   │           └── model        
+
 │   │   │           └── Main                
 │   │   └── resources
+
 │   │       ├── Config.xml               
 │
 └── pom.xml                                   # Maven configuration file (or build.gradle for Gradle)
@@ -54,9 +65,13 @@ Les Spring Beans sont des objets Java qui sont créés et gérés par le contene
 
 ### Bean Scopes
 Dans le framework Spring, les scopes des beans définissent la durée de vie et la portée des beans créés par le conteneur Spring. Les beans peuvent avoir différents scopes, tels que :
+
 singleton: Une seule instance de bean est créée par Spring.
+
 prototype: Une nouvelle instance est créée chaque fois que le bean est demandé.
+
 request: Une instance par requête HTTP.
+
 session: Une instance par session HTTP.
 
 ### ApplicationContext
@@ -65,9 +80,13 @@ ApplicationContext est le conteneur central de Spring qui gère les beans et leu
 ### Component Scanning and Stereotype Annotations
 Component Scanning et Annotations Stéréotypées sont des fonctionnalités clés du framework Spring qui facilitent la détection et la gestion des beans au sein de l'application. Elles permettent de simplifier la configuration et d'encourager une architecture modulaire.
 Spring offre des annotations comme :
+
 @Component: Indique un composant général.
+
 @Service: Indique une classe de service.
+
 @Repository: Indique une classe de dépôt.
+
 @Controller: Indique un contrôleur Spring MVC.
 
 ### Spring Data JPA
